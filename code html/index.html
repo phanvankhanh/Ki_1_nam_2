@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+    1.  h1-h6 -heading(tiêu đề)
+    2.  p   -paragraph(đoạn văn)
+    3.  img -image(hình ảnh)
+    4.  a   -anchor(mỏ neo, liên kết)
+    5.  ul, li  -unordered list, list item (hiển thị dạng danh sách)
+    6.  table   -(kẻ bảng)
+    7.  input   -(tạo ô để nhập chữ)
+    8.  button  -(nút)
+    9.  div     -(tạo hình khố bao quanh các phần tử khác)
+    10. Attribute   -(thuộc tính-(là thuộc tính của html nằm trong thẻ mở))
+-->
+<html>
+    <!--Phần dầu -->
+    <head>
+        <title> CODE - HTML</title>
+        <meta charset="utf-8"> 
+
+
+        <!-- style dùng để viết CSS-->
+        <!--color là thuộc tính, red là giá trị sau khi kết thúc c0os dấu chấm phẩy cuối câu-->
+        <!--font-size là phông chữ và kích thước-->
+
+        <!--<style>
+            h1{
+                color: red; 
+                font-size: 40px;   // theo kiểu Internal.
+            }
+        </style>
+        -->
+
+        <!--<link rel="stylesheet" href="main.css">-->  <!--viết main.css cần phải liên kết link "theo kiểu External"--> 
+
+    </head>
+
+<!--Phần thân-->
+    <body>
+
+        <div>
+
+        
+
+            <h1 title="Đây là tiêu đề.">Attribute</h1>  <!--thuộc tính-->
+
+            <h2>Muốn con hay chữ, thầy yêu lấy…gì?</h2>
+
+            <button>Đăng kí</button>    <!--tạo nút nhấn-->
+            
+            <input type="text"> <!--điền chữ vào ô-->
+
+            <input type="checkbox"> <!--tạo ra check chọn nhiều thứ-->
+            <input type="checkbox">
+            <input type="checkbox"> 
+
+            <input name="gender" type="radio">  <!--chọn một trong các trường hợp khi cùng 1 tên-->
+            <input name="gender" type="radio">
+            <input name="gender" type="radio"> 
+
+            <p>Đầu năm học này, ở TP Hồ Chí Minh, một vị trong Ban đại diện cha mẹ học sinh lớp 3/10, Trường Tiểu học An Hội chỉ tên từng phụ huynh khó khăn, yêu cầu đứng dậy cho hiệu trưởng…xem mặt.</p>
+            <img src="https://media1.nguoiduatin.vn/thumb_x992x595/media/pham-viet-hung/2022/10/18/lam-thu.jpg" alt="Ảnh minh hoạ">
+            <a href="https://fullstack.edu.vn/not-found">Tới trang học lập trình F8</a>
+            <ul>
+                <li>HTML, CSS là gì?</li>
+                <li>Cài đặt môi trường.</li>
+                <li></li>
+                <li></li>
+            </ul>
+            <table>
+                <thead>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Địa điểm</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Khánh</td>
+                        <td>HN</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Khánh</td>
+                        <td>TH</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Khánh</td>
+                        <td>HN2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div>
+            <!--
+                ***Gồm có 3 cách sử dụng CSS trong HTML
+                1.  Internal
+                2.  External
+                3.  Inline
+                có thể viết ul thành ol để chuyển từ dấu chấm đầu dòng thành số
+            -->
+            <h1 style=" color: red;font-size: 16px;"> CSS trong HTML?</h1>
+            <ol>
+                <li>Internal</li>   <!--Sử dụng một căp thẻ style đặt ở trong html và viết css ở trong style đó-->
+                <li>External</li>   <!--Tạo một file ở bên ngoài có thể ở bên ngoài project hoặc có thể link ở một nơi khác, sử dụng cặp thẻ link để dẫn toiws file css đó-->
+                <li>Inline</li>     <!--sử dụng một attribute style trong thẻ mở của thẻ html và viết các thuộc tính css vào-->
+            </ol>
+        </div>
+    </body>
+</html>
